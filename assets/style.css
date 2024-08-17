@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --azul__escuro: #0A3871;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F3F5FC;
+    
+
+}
+
+p {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+}
+
+.imagem-logo {
+    padding: 1% 2%;
+    height: 2.5rem;
+}
+
+.corpo {
+    padding: 0% 10%;
+    display: flex;
+    height: 50rem;
+
+}
+
+.corpoCaixa {
+    width: 70%;
+    padding-top: 5%;
+    
+}
+
+.corpoCaixaResposta {
+    width: 30%;
+    height: 42rem;
+    background-color:#ffffff;
+    padding: 2.2% 2%;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px 0px rgb(219, 219, 219);
+}
+
+
+.imagemDecodificador {
+    padding-left: 10%;
+    
+}
+
+.resultado {
+    font-size: 25px;
+    height: 70%;
+    
+}
+
+::-webkit-input-placeholder {
+    color: #0A3871;
+ }
+
+#caixa-texto {
+    resize: none;
+    height: 20rem;
+    width: 80%;
+    font-size: 32px;
+    background-color: #F3F5FC;
+    border-radius: 5px;
+    border-color: #ededed;
+    padding: 5%;
+    color: #0A3871;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    outline:none ;
+    
+
+}
+
+.info{
+    padding: 1%;
+}
+
+.info p {
+    font-size: 0.9rem;
+}
+
+.imagem__info {
+    height: 0.9rem;
+    
+}
+
+.botoes {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3%;
+    
+
+}
+
+.botoes__estilo {
+    color: #f7f7f7;
+    height: 5rem;
+    width: 43%;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--azul__escuro);
+    font-family: 'Nunito',sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.botoes__estilo__dois {
+    color: #0A3871;
+    height: 5rem;
+    width: 43%;
+    border-color: #0A3871;
+    border-radius: 1.5rem;
+    background-color:#F3F5FC;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;   
+    cursor: pointer;
+}
+
+
+.resultado {
+    resize: none;
+    height: 10rem;
+    width: 90%;
+    font-size: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 5%;
+    color: #0A3871;
+    outline: none;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background-color: #F3F5FC;
+    margin-top: 5%;
+    color: #0A3871;
+    font-size: 1rem;
+    
+}
+
+.rodape p {
+    font-weight: 800;
+    font-family: 'Mulish',sans-serif;
+}
+
+
+/*RESPONSIVO*/
+
+@media (max-width: 1300px) {
+    .imagem__dois {
+        height:40%;
+        padding: 1%;
+        
+    }
+
+    .resultado {
+        height: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .parte__um {
+        width: 100%;
+    }
+
+    #caixa-texto {
+        width: 90%;
+        font-size: 35px;
+    }
+
+    .parte__dois {
+        width: 96%;
+        
+    }
+    
+    .resultado {
+        height: 15rem;
+    }
+
+    .imagem__dois {
+        display: none;
+    }
+
+    .botoes__estilo {
+        width: 50%;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .botoes__estilo__dois {
+        width: 50%;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .rodape {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 880px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .parte__um {
+        width: 100%;
+        height: auto;
+    }
+
+    #caixa-texto {
+        width: 90%;
+        font-size: 32px;
+        height: 35rem;
+    }
+
+    .botoes {
+        padding-top: 1%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        
+    }
+
+    .botoes__estilo {
+        height: 6rem;
+        font-size: 1.1rem;
+        width: 100%;
+        border-radius: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .botoes__estilo__dois {
+        height: 6rem;
+        font-size: 1.1rem;
+        width: 100%;
+        border-radius: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+
+
+    .parte__dois {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        border-radius: 1rem;
+        
+        
+    }
+
+    .resultado {
+        font-size: 1.5rem;
+        font-weight: 650;
+        font-family: 'Mulish',sans-serif;
+        width: 100%;
+        height: 35rem;
+    }
+
+    .imagem__dois{
+        
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 2rem;
+    }
+
+    .rodape {
+        margin-top: 220%;
+        font-size: 0.6rem;
+    }
+}

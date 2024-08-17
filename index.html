@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="imagem-alura" src="imagens/logo-alura.jpg" alt="logo da alura">
+    </header>
+
+    <main class="corpo">
+        <section class="corpoCaixa">
+            <div class="caixa-texto">
+                <textarea type="text" name="texto" id="caixa-texto" placeholder="Escreva aqui" ></textarea>
+            </div>
+    
+            <div class="info">
+                <p>
+                <img class="imagem__info" src="imagens/exclamação.jpg" alt="exclamacao">
+                Apenas letras minúsculas e sem acento.
+
+                </p>
+            </div>
+            <div class="botoes">
+                <button class="botoes__estilo" id="botao__cripto" onclick="btnCriptografar()">CRIPTOGRAFAR</button>
+                <button class="botoes__estilo__dois" onclick="btnDescriptografar()" >DESCRIPTOGRAFAR</button>
+            </div>
+        </section>
+        <section class="corpoCaixaResposta">
+                <textarea class="resultado" disabled  ></textarea>
+                <img class="imagemDecodificador" src="imagens/Decodificador IMG.jpg" alt="imagem">
+                <img class="imagemTexto" src="imagens/Sem texto.jpg" alt="imagem">
+                
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            DEVOLOPED BY EDUARDO KRUEL
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
